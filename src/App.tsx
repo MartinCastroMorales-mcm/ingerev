@@ -73,6 +73,7 @@ function App() {
             <p className="text-xl md:text-2xl mb-8  " style={textShadowStyle}>
               Soluciones profesionales para cubiertas, losas y tratamiento de grietas
             </p>
+            {/*
             <a
               href="#contacto"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors  "
@@ -80,6 +81,7 @@ function App() {
             >
               Solicitar Presupuesto
             </a>
+            */}
           </div>
         </div>
         <button
