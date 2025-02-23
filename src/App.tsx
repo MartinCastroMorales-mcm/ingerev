@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Building2, Phone, Mail, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
 import AboutUs from './about';
+import Clientes from './clientes';
 
 const images = [
-  'https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
+  'assets/ceat2.jpeg',
+  'assets/ceat_san_pedro_de_la_paz.jpeg',
+  'assets/futuro_center_concepcion_vista_general.jpeg',
+  'assets/edificio_futuro2.jpeg',
+  'assets/tres_pascualas_uss.jpeg',
+  'assets/uss_2.jpeg',
 ];
 
 function App() {
@@ -32,7 +36,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-blue-900 text-white py-4">
+      <header className="bg-white text-white py-4">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {/*<Building2 size={32} />*/}
@@ -102,7 +106,7 @@ function App() {
       <section id="servicios" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg  ">
               <h3 className="text-xl font-semibold mb-4">Impermeabilización de Cubiertas</h3>
               <p className="text-gray-600">
@@ -121,12 +125,19 @@ function App() {
                 Servicios especializados para el cuidado y protección de losas.
               </p>
             </div>
+            <div className="bg-white p-6 rounded-lg  ">
+              <h3 className="text-xl font-semibold mb-4">Pintura e Impermeabilizaciórn de edificios.</h3>
+              <p className="text-gray-600">
+               Desarrollo de esquemas de mantencion para edificios en altura. 
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Nosotros */}
       <AboutUs/>
+      <Clientes/>
       {/*
       <section id="servicios" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -158,24 +169,25 @@ function App() {
       {/* Footer */}
       <footer id="contacto" className="bg-blue-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             <div>
               <h3 className="text-xl font-semibold mb-4">Contacto</h3>
               <div className="space-y-2">
                 <p className="flex items-center gap-2">
                   <Phone size={20} />
-                  <span>+1 234 567 890</span>
+                  <span>+56 9 5406 4442</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail size={20} />
-                  <span>info@Ingerev.com</span>
+                  <span>ingerev@ingerev.cl</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <MapPin size={20} />
-                  <span>Calle Principal 123, Ciudad</span>
+                  <span>Juan Martín de Rozas 106 Concepción</span>
                 </p>
               </div>
             </div>
+            {/*
             <div>
               <h3 className="text-xl font-semibold mb-4">Horario</h3>
               <p>Lunes a Viernes: 8:00 - 18:00</p>
@@ -189,9 +201,10 @@ function App() {
                 <a href="#" className="hover:text-blue-200">LinkedIn</a>
               </div>
             </div>
+            */}
           </div>
           <div className="mt-8 pt-8 border-t border-blue-800 text-center">
-            <p>© 2024 Ingerev. Todos los derechos reservados.</p>
+            <p>© 2025 Ingerev. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
